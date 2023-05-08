@@ -1,6 +1,7 @@
 package Model;
 
 import org.lwjgl.opengl.GL11;
+import util.Helpers;
 
 import static util.Helpers.HEIGHT;
 import static util.Helpers.WIDTH;
@@ -8,86 +9,110 @@ import static util.Helpers.WIDTH;
 public class Ball {
     private float x, y; // Position
     private float radius; // Radius
+    private float vx, vy; // Speed in both X and Y directions
 
-    private float speedX, speedY; // Speed in both X and Y directions
-    private long window;
 
-    public Ball(long window, float x, float y, float radius, float speedX, float speedY) {
-        this.window = window;
-
+    public Ball(float x, float y, float radius, float vx, float vy) {
         this.x = x;
         this.y = y;
         this.radius = radius;
-        this.speedX = speedX;
-        this.speedY = speedY;
+        this.vx = vx;
+        this.vy = vy;
     }
 
 
-    public void update(float delta, Paddle paddle, Block[][] blocks){
-        // Move the ball
-        x += speedX * delta;
-        y += speedY * delta;
-
-        // Check collision with the screen boundaries
-        if (x - radius <= 0) {
-            x = radius;
-            speedX = -speedX;
-        }
-        if (x + radius >= WIDTH) {
-            x = WIDTH - radius;
-            speedX = -speedX;
-        }
-        if (y - radius <= 0) {
-            y = radius;
-            speedY = -speedY;
-        }
-
-        // Check collision with the paddle
-        if (y + radius >= paddle.getY() && y <= paddle.getY() + paddle.getHeight() &&
-                x + radius >= paddle.getX() && x - radius <= paddle.getX() + paddle.getWidth()) {
-            y = paddle.getY() - (radius * 2);
-            speedY = -speedY;
-        }
-
-        // Check if the ball falls off the screen
-        if (y + radius * 2 >= HEIGHT) {
-            // Reset the ball to the center of the screen
-            //==TODO==: Decrement the player's health :)
+    public void update(float delta, Paddle paddle, Block[][] blocks) {
+        x += vx * delta;
+        y += vy * delta;
 
 
-            x = WIDTH / 2;
-            y = HEIGHT / 2;
+        checkCollisionWithScreenBounds();
+        checkCollisionWithPaddle(paddle);
+        checkCollisionWithBlocks(blocks);
+    }
 
 
-        }
-        // Check collision with the blocks
-        for (int row = 0; row < blocks.length; row++) {
-            for (int col = 0; col < blocks[row].length; col++) {
-                Block block = blocks[row][col];
-                if (block.isActive() && checkBallCollisionWithBlock(block)) {
-                    // Toggle the active state of the block, and change the ball's vertical speed
+    private void checkCollisionWithBlocks(Block[][] blocks) {
+        for (Block[] value : blocks) {
+            for (Block block : value) {
+                if (block != null && block.isActive() && collidesWith(block.getX(), block.getY(), block.getWidth(), block.getHeight())) {
+                    float dx = x - (block.getX() + block.getWidth() / 2);
+                    float dy = y - (block.getY() + block.getHeight() / 2);
+
+                    if (Math.abs(dx) > Math.abs(dy)) {
+                        vx = -vx;
+                    } else {
+                        vy = -vy;
+                    }
+
                     block.setActive(false);
-                    speedY = -speedY;
-                    break;
                 }
             }
         }
     }
 
-    private boolean checkBallCollisionWithBlock (Block block){
-        float ballLeft = x - radius;
-        float ballRight = x + radius;
-        float ballTop = y - radius;
-        float ballBottom = y + radius;
 
-        float blockLeft = block.getX();
-        float blockRight = block.getX() + block.getWidth();
-        float blockTop = block.getY();
-        float blockBottom = block.getY() + block.getHeight();
+    private void checkCollisionWithScreenBounds() {
+        if (x - radius < 0) {
+            x = radius;
+            vx = Math.abs(vx);
+        } else if (x + radius > WIDTH) {
+            x = WIDTH - radius;
+            vx = -Math.abs(vx);
+        }
 
-        return ballLeft < blockRight && ballRight > blockLeft &&
-                ballTop < blockBottom && ballBottom > blockTop;
+        if (y - radius < 0) {
+            y = radius;
+            vy = Math.abs(vy);
+        } else if (y + radius > HEIGHT) {
+            //Reset the ball
+            //==TODO: Decrement Player Health==//
+            x = WIDTH / 2f;
+            y = HEIGHT / 2f;
+            vx = 300;
+            vy = 300;
+
+        }
     }
+
+    private void checkCollisionWithPaddle(Paddle paddle) {
+        if (collidesWith(paddle.getX(), paddle.getY(), paddle.getWidth(), paddle.getHeight())) {
+            float paddleCenter = paddle.getX() + paddle.getWidth() / 2;
+            float ballCenter = x + radius;
+            float relativeIntersection = (ballCenter - paddleCenter) / (paddle.getWidth() / 2);
+
+            // Calculate the new angle based on the relative intersection
+            float newAngle = (float) (Math.PI / 4 * relativeIntersection); // Max angle change is 45 degrees
+
+            // Update the ball's velocity based on the new angle
+            vx = (float) (Math.abs(vy) * Math.tan(newAngle));
+            vy = -Math.abs(vy);
+
+            // Ensure the ball's velocity components have a minimum absolute value of 100
+            if (Math.abs(vx) < 100) {
+                vx = Math.copySign(100, vx);
+                // Adjust the vertical velocity to keep the total velocity constant
+                float totalVelocity = (float) Math.sqrt(vx * vx + vy * vy);
+                float targetTotalVelocity = (float) Math.sqrt(100 * 100 + 100 * 100);
+                vy *= targetTotalVelocity / totalVelocity;
+            }
+
+            // Ensure the ball is above the paddle to avoid getting stuck
+            y = paddle.getY() - radius;
+        }
+    }
+
+
+    private boolean collidesWith(float rectX, float rectY, float rectWidth, float rectHeight) {
+        float closestX = Math.max(rectX, Math.min(x, rectX + rectWidth));
+        float closestY = Math.max(rectY, Math.min(y, rectY + rectHeight));
+
+        float dx = x - closestX;
+        float dy = y - closestY;
+
+        return dx * dx + dy * dy <= radius * radius;
+    }
+
 
 
     public void render() {
@@ -125,12 +150,12 @@ public class Ball {
         return radius;
     }
 
-    public float getSpeedX() {
-        return speedX;
+    public float getVx() {
+        return vx;
     }
 
-    public float getSpeedY() {
-        return speedY;
+    public float getVy() {
+        return vy;
     }
 
 }

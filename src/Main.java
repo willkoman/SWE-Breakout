@@ -18,10 +18,6 @@ public class Main {
     // Store the window handle
     private long window;
 
-    //Game Objects
-    private Paddle paddle;
-    private Ball ball;
-
     private Game game;
 
     public static void main(String[] args) {
@@ -92,6 +88,7 @@ public class Main {
         setupOrthoProjection();
 
         //=* Initialize game here *=//
+
         game = new Game(window, WIDTH, HEIGHT);
 
     }
