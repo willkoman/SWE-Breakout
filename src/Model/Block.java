@@ -3,8 +3,8 @@ package Model;
 import org.lwjgl.opengl.GL11;
 
 public class Block {
-    private float x, y, width, height;
-    private boolean active;
+    protected float x, y, width, height;
+    protected boolean active;
 
     public Block(float x, float y, float width, float height) {
         this.x = x;
@@ -32,6 +32,9 @@ public class Block {
 
             GL11.glPopMatrix();
         }
+    }
+    public void update(float delta, Paddle player){
+        // Do nothing
     }
 
     public boolean isActive() {

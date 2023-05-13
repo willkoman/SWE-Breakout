@@ -1,0 +1,438 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Breakout:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Breakout_jar</output-path>
+    <root id="archive" name="Breakout.jar">
+      <element id="module-output" name="Breakout" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-javadoc.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-natives-windows.jar" path-in-jar="/" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-egl-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-cuda-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-fmod-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jawt-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-odbc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opencl-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ktx-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lz4-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-ovr-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-par-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-sse-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-stb-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vma-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-bgfx-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-llvm-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-lmdb-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meow-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opus-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-vulkan-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-yoga-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-zstd-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-hwloc-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-javadoc.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-sources.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-assimp-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nanovg-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openal-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-openxr-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyfd-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tootle-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-xxhash-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-nuklear-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-shaderc-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-tinyexr-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-freetype-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-jemalloc-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-remotery-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-rpmalloc-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-libdivide-natives-windows.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-natives-macos.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/lwjgl-release-3.3.2-custom/lwjgl-meshoptimizer-natives-windows.jar" />
+    </root>
+  </artifact>
+</component>

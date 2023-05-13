@@ -1,23 +1,25 @@
 package Model;
 
 import org.lwjgl.opengl.GL11;
-import util.Helpers;
+import util.SoundManager;
 
 import static util.Helpers.HEIGHT;
 import static util.Helpers.WIDTH;
 
 public class Ball {
-    private float x, y; // Position
-    private float radius; // Radius
-    private float vx, vy; // Speed in both X and Y directions
+    protected float x, y; // Position
+    protected Game game;
+    protected float radius; // Radius
+    protected float vx, vy; // Speed in both X and Y directions
 
 
-    public Ball(float x, float y, float radius, float vx, float vy) {
+    public Ball(float x, float y, float radius, float vx, float vy, Game game) {
         this.x = x;
         this.y = y;
         this.radius = radius;
         this.vx = vx;
         this.vy = vy;
+        this.game = game;
     }
 
 
@@ -44,8 +46,15 @@ public class Ball {
                     } else {
                         vy = -vy;
                     }
-
+                    SoundManager.playSound("src/resources/sound/boop.ogg", 1.0f, false);
+                    //if block is of class Enemy, get all bullets and set them to inactive
+                    if (block instanceof Enemy) {
+                        for (Bullet bullet : ((Enemy) block).getBullets()) {
+                            bullet.setActive(false);
+                        }
+                    }
                     block.setActive(false);
+                    game.incrementScore(50);
                 }
             }
         }
@@ -54,19 +63,24 @@ public class Ball {
 
     private void checkCollisionWithScreenBounds() {
         if (x - radius < 0) {
+            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
             x = radius;
             vx = Math.abs(vx);
         } else if (x + radius > WIDTH) {
+            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
             x = WIDTH - radius;
             vx = -Math.abs(vx);
         }
 
         if (y - radius < 0) {
+            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
             y = radius;
             vy = Math.abs(vy);
         } else if (y + radius > HEIGHT) {
             //Reset the ball
             //==TODO: Decrement Player Health==//
+            game.incrementScore(-100);
+            game.incrementHealth(-20);
             x = WIDTH / 2f;
             y = HEIGHT / 2f;
             vx = 300;
@@ -81,29 +95,29 @@ public class Ball {
             float ballCenter = x + radius;
             float relativeIntersection = (ballCenter - paddleCenter) / (paddle.getWidth() / 2);
 
+            // Normalize the relative intersection to the range [-1, 1]
+            relativeIntersection = Math.max(-1, Math.min(1, relativeIntersection));
+
             // Calculate the new angle based on the relative intersection
-            float newAngle = (float) (Math.PI / 4 * relativeIntersection); // Max angle change is 45 degrees
+            // The angle varies from -60 degrees to 60 degrees on the Y-axis
+            // and from -15 degrees to 15 degrees on the X-axis
+            float newAngle = (float) (relativeIntersection * 30 * Math.PI / 180);
 
             // Update the ball's velocity based on the new angle
-            vx = (float) (Math.abs(vy) * Math.tan(newAngle));
-            vy = -Math.abs(vy);
-
-            // Ensure the ball's velocity components have a minimum absolute value of 100
-            if (Math.abs(vx) < 100) {
-                vx = Math.copySign(100, vx);
-                // Adjust the vertical velocity to keep the total velocity constant
-                float totalVelocity = (float) Math.sqrt(vx * vx + vy * vy);
-                float targetTotalVelocity = (float) Math.sqrt(100 * 100 + 100 * 100);
-                vy *= targetTotalVelocity / totalVelocity;
-            }
+            float speed = (float) Math.sqrt(vx * vx + vy * vy);
+            vy = -(float) (speed * Math.cos(newAngle));
+            vx = (float) (speed * Math.sin(newAngle));  // The minus sign is because y-coordinates decrease upwards
 
             // Ensure the ball is above the paddle to avoid getting stuck
             y = paddle.getY() - radius;
+            SoundManager.playSound("src/resources/sound/boop.ogg", 1.0f, false);
         }
     }
 
 
-    private boolean collidesWith(float rectX, float rectY, float rectWidth, float rectHeight) {
+
+
+    boolean collidesWith(float rectX, float rectY, float rectWidth, float rectHeight) {
         float closestX = Math.max(rectX, Math.min(x, rectX + rectWidth));
         float closestY = Math.max(rectY, Math.min(y, rectY + rectHeight));
 
@@ -142,20 +156,20 @@ public class Ball {
         return x;
     }
 
-    public float getY() {
-        return y;
-    }
-
-    public float getRadius() {
-        return radius;
-    }
-
-    public float getVx() {
-        return vx;
-    }
-
-    public float getVy() {
-        return vy;
-    }
+//    public float getY() {
+//        return y;
+//    }
+//
+//    public float getRadius() {
+//        return radius;
+//    }
+//
+//    public float getVx() {
+//        return vx;
+//    }
+//
+//    public float getVy() {
+//        return vy;
+//    }
 
 }

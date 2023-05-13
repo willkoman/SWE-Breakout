@@ -2,14 +2,18 @@ package Model;
 
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
+import Enum.SpriteType;
 import static util.Helpers.WIDTH;
+import static util.Helpers.renderSprite;
 
 public class Paddle {
-    private float x, y; // Position
-    private float width, height; // Size
-    private float speed; // Horizontal speed
-
-    private long window;
+    private float x;
+    private final float y; // Position
+    private final float width;
+    private final float height; // Size
+    private SpriteType spriteType = SpriteType.PLAYER_IDLE;
+    private final float speed; // Horizontal speed
+    private final long window; // GLFW window
 
     public Paddle(long window, float x, float y, float width, float height, float speed) {
         this.window = window;
@@ -34,11 +38,9 @@ public class Paddle {
         // Move the paddle left or right based on keyboard input
         if (GLFW.glfwGetKey(window, GLFW.GLFW_KEY_LEFT) == GLFW.GLFW_PRESS) {
             moveLeft(delta);
-            System.out.println("left");
         }
         if (GLFW.glfwGetKey(window, GLFW.GLFW_KEY_RIGHT) == GLFW.GLFW_PRESS) {
             moveRight(delta);
-            System.out.println("right");
         }
 
         // Constrain the paddle within the screen bounds
@@ -51,18 +53,17 @@ public class Paddle {
 
     public void render() {
         GL11.glPushMatrix();
-        GL11.glTranslatef(x, y, 0);
-        GL11.glColor3f(1.0f, 1.0f, 1.0f); // Set color to white
+        GL11.glTranslatef(x, y-64, 0);
 
-        // Draw the paddle using immediate mode rendering
-        GL11.glBegin(GL11.GL_QUADS);
-        {
-            GL11.glVertex2f(0, 0);
-            GL11.glVertex2f(width, 0);
-            GL11.glVertex2f(width, height);
-            GL11.glVertex2f(0, height);
-        }
-        GL11.glEnd();
+        GL11.glColor3f(1.0f, 1.0f, 1.0f); // Set color to white
+        GL11.glEnable(GL11.GL_TEXTURE_2D);
+        GL11.glDisable(GL11.GL_BLEND); // Disable blending to preserve texture colors
+        //write ternary operator to change spriteType to PLAYER_IDLE if space is pressed
+        spriteType = isSpacePressed() ? SpriteType.PLAYER_PARRY : SpriteType.PLAYER_IDLE;
+        renderSprite(spriteType, 0, 0, 1.0f);
+
+        GL11.glEnable(GL11.GL_BLEND); // Re-enable blending if needed
+        GL11.glDisable(GL11.GL_TEXTURE_2D);
 
         GL11.glPopMatrix();
     }
@@ -81,6 +82,10 @@ public class Paddle {
 
     public float getHeight() {
         return height;
+    }
+    public boolean isSpacePressed() {
+
+        return GLFW.glfwGetKey(window, GLFW.GLFW_KEY_SPACE) == GLFW.GLFW_PRESS;
     }
 
 }

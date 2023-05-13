@@ -9,6 +9,7 @@ import org.lwjgl.glfw.GLFWKeyCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 import util.Helpers;
+import util.SoundManager;
 
 import static util.Helpers.*;
 
@@ -37,6 +38,8 @@ public class Main {
         // Terminate GLFW and free the error callback
         GLFW.glfwTerminate();
         GLFW.glfwSetErrorCallback(null).free();
+
+        SoundManager.cleanup();
     }
 
 
@@ -87,8 +90,11 @@ public class Main {
         Helpers.init();
         setupOrthoProjection();
 
-        //=* Initialize game here *=//
+        GL11.glEnable(GL11.GL_BLEND);
+        GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
+        //=* Initialize game here *=//
+        SoundManager.init();
         game = new Game(window, WIDTH, HEIGHT);
 
     }
@@ -117,6 +123,7 @@ public class Main {
         GL11.glLoadIdentity();
         GL11.glOrtho(0, WIDTH, HEIGHT, 0, -1, 1);
         GL11.glMatrixMode(GL11.GL_MODELVIEW);
+
     }
 
 }
