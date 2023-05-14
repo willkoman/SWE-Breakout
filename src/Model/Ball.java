@@ -46,7 +46,7 @@ public class Ball {
                     } else {
                         vy = -vy;
                     }
-                    SoundManager.playSound("src/resources/sound/boop.ogg", 1.0f, false);
+                    SoundManager.playSound("/sound/boop.ogg", 1.0f, false);
                     //if block is of class Enemy, get all bullets and set them to inactive
                     if (block instanceof Enemy) {
                         for (Bullet bullet : ((Enemy) block).getBullets()) {
@@ -63,17 +63,17 @@ public class Ball {
 
     private void checkCollisionWithScreenBounds() {
         if (x - radius < 0) {
-            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
+            SoundManager.playSound("/sound/beep.ogg", 1.0f, false);
             x = radius;
             vx = Math.abs(vx);
         } else if (x + radius > WIDTH) {
-            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
+            SoundManager.playSound("/sound/beep.ogg", 1.0f, false);
             x = WIDTH - radius;
             vx = -Math.abs(vx);
         }
 
         if (y - radius < 0) {
-            SoundManager.playSound("src/resources/sound/beep.ogg", 1.0f, false);
+            SoundManager.playSound("/sound/beep.ogg", 1.0f, false);
             y = radius;
             vy = Math.abs(vy);
         } else if (y + radius > HEIGHT) {
@@ -110,7 +110,7 @@ public class Ball {
 
             // Ensure the ball is above the paddle to avoid getting stuck
             y = paddle.getY() - radius;
-            SoundManager.playSound("src/resources/sound/boop.ogg", 1.0f, false);
+            SoundManager.playSound("/sound/boop.ogg", 1.0f, false);
         }
     }
 

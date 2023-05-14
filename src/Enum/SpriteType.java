@@ -4,5 +4,6 @@ public enum SpriteType {
     PLAYER_IDLE,
     PLAYER_PARRY,
     ENEMY1_IDLE,
-    ENEMY1_FIRE
+    ENEMY1_FIRE,
+    CREDITS
 }

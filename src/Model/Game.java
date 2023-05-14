@@ -7,6 +7,7 @@ import org.lwjgl.BufferUtils;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.opengl.GL11;
 import util.SoundManager;
+import util.Texture;
 
 import java.nio.IntBuffer;
 import java.util.HashMap;
@@ -22,6 +23,7 @@ public class Game {
     private int health = 100;
     private int score = 0;
     private GameState gameState;
+    private Credits credits;
     private final Menu menu;
     private final long window;
     private final int width;
@@ -37,8 +39,9 @@ public class Game {
         initLevelLayouts();
         currentLevelNumber = 1;
         loadLevel(width, height, currentLevelNumber);
-        SoundManager.loadSound("src/resources/sound/beep.ogg");
-        SoundManager.loadSound("src/resources/sound/boop.ogg");
+        SoundManager.loadSound("/sound/beep.ogg");
+        SoundManager.loadSound("/sound/boop.ogg");
+        this.credits = new Credits(this, width, height, window);
     }
 
     private void initLevelLayouts() {
@@ -69,6 +72,11 @@ public class Game {
             if (currentLevel.allBlocksDestroyed()) {
                 nextLevel(width, height);
             }
+        }
+        else if (gameState == GameState.CREDITS){
+            credits.update();
+            credits.render();
+
         }
     }
 

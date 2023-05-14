@@ -15,19 +15,21 @@ public class Helpers {
     private static Texture playerParryTexture;
     private static Texture enemy1IdleTexture;
     private static Texture enemy1FireTexture;
+    private static Texture creditsTexture;
     public static int WIDTH = 800;
     public static int HEIGHT = 600;
 
 
     public static void init() {
         lastFrameTime = getTime();
-        playerIdleTexture = new Texture("src/resources/sprite/parry-player.png");
-        playerParryTexture = new Texture("src/resources/sprite/parry-playerattack.png");
-        enemy1IdleTexture = new Texture("src/resources/sprite/parry-fire-final.png");
-        enemy1FireTexture = new Texture("src/resources/sprite/parry-fireattack-final.png");
+        playerIdleTexture = new Texture("/sprite/parry-player.png");
+        playerParryTexture = new Texture("/sprite/parry-playerattack.png");
+        enemy1IdleTexture = new Texture("/sprite/parry-fire-final.png");
+        enemy1FireTexture = new Texture("/sprite/parry-fireattack-final.png");
+        creditsTexture = new Texture("/text/credits_full.png");
         digits = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            digits.add(new Texture("src/resources/text/" + i + ".png"));
+            digits.add(new Texture("/text/" + i + ".png"));
         }
     }
 
@@ -82,6 +84,7 @@ public class Helpers {
             case PLAYER_PARRY -> playerParryTexture;
             case ENEMY1_IDLE -> enemy1IdleTexture;
             case ENEMY1_FIRE -> enemy1FireTexture;
+            case CREDITS -> creditsTexture;
             default -> throw new IllegalArgumentException("Invalid sprite type: " + spriteType);
         };
 

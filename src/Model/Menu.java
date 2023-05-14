@@ -7,6 +7,7 @@ import org.lwjgl.opengl.GL11;
 import util.Texture;
 import Enum.GameState;
 
+import javax.swing.*;
 import java.nio.IntBuffer;
 
 public class Menu {
@@ -23,9 +24,11 @@ public class Menu {
         this.selectedOption = 0;
         this.game = game;
         this.options = new Texture[] {
-                new Texture("src/resources/text/play.png"),
-                new Texture("src/resources/text/highscore.png"),
-                new Texture("src/resources/text/quit.png"),
+
+                new Texture("/text/play.png"),
+                new Texture("/text/highscore.png"),
+                new Texture("/text/quit.png"),
+                new Texture("/text/credits.png")
         };
     }
 
@@ -94,6 +97,10 @@ public class Menu {
                 break;
             case 2: // Quit
                 System.exit(0);
+                break;
+            case 3: // Credits
+                //Display swing window with credits
+                game.setGameState(GameState.CREDITS);
                 break;
         }
     }

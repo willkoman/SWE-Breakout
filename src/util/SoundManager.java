@@ -5,21 +5,42 @@ import org.lwjgl.stb.STBVorbis;
 import org.lwjgl.stb.STBVorbisInfo;
 import org.lwjgl.system.MemoryStack;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.nio.ShortBuffer;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SoundManager {
 
-    public static void loadSound(String soundFile) {
+    private static final List<ByteBuffer> soundBuffers = new ArrayList<>();
+
+    public static int loadSound(String resourceName) {
         int bufferId = AL10.alGenBuffers();
+        ByteBuffer soundBuffer = null;
         try (STBVorbisInfo ignored = STBVorbisInfo.malloc()) {
             MemoryStack.stackPush();
             IntBuffer channelsBuffer = MemoryStack.stackMallocInt(1);
             IntBuffer sampleRateBuffer = MemoryStack.stackMallocInt(1);
 
-            // Load the sound file using LWJGL STB Vorbis library
-            ShortBuffer pcm = STBVorbis.stb_vorbis_decode_filename(soundFile, channelsBuffer, sampleRateBuffer);
+            // Load the sound file into a ByteBuffer
+            try {
+                InputStream stream = SoundManager.class.getResourceAsStream(resourceName);
+                if (stream == null) {
+                    throw new IOException("Resource not found: " + resourceName);
+                }
+
+                byte[] byteArray = stream.readAllBytes();
+                soundBuffer = ByteBuffer.allocateDirect(byteArray.length);
+                soundBuffer.put(byteArray).flip();
+            } catch (IOException e) {
+                throw new RuntimeException("Failed to load a sound file: " + resourceName, e);
+            }
+
+            // Decode the sound file
+            ShortBuffer pcm = STBVorbis.stb_vorbis_decode_memory(soundBuffer, channelsBuffer, sampleRateBuffer);
             int channels = channelsBuffer.get(0);
             int sampleRate = sampleRateBuffer.get(0);
 
@@ -32,32 +53,20 @@ public class SoundManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // Add the soundBuffer to the list to prevent it from being garbage collected
+        if (soundBuffer != null) {
+            soundBuffers.add(soundBuffer);
+        }
+
+        return bufferId;
     }
 
 
-    public static void playSound(String soundFile, float volume, boolean loop) {
+    public static void playSound(String resourceName, float volume, boolean loop) {
         int sourceId = AL10.alGenSources();
 
-        int bufferId = AL10.alGenBuffers();
-        try (STBVorbisInfo ignored = STBVorbisInfo.malloc()) {
-            MemoryStack.stackPush();
-            IntBuffer channelsBuffer = MemoryStack.stackMallocInt(1);
-            IntBuffer sampleRateBuffer = MemoryStack.stackMallocInt(1);
-
-            // Load the sound file using LWJGL STB Vorbis library
-            ShortBuffer pcm = STBVorbis.stb_vorbis_decode_filename(soundFile, channelsBuffer, sampleRateBuffer);
-            int channels = channelsBuffer.get();
-            int sampleRate = sampleRateBuffer.get();
-
-            // Create a new OpenAL buffer and fill it with audio data
-            int format = channels == 1 ? AL10.AL_FORMAT_MONO16 : AL10.AL_FORMAT_STEREO16;
-            assert pcm != null;
-            AL10.alBufferData(bufferId, format, pcm, sampleRate);
-
-            MemoryStack.stackPop();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        int bufferId = loadSound(resourceName);
 
         // Bind the sound file to the source ID
         AL10.alSourcei(sourceId, AL10.AL_BUFFER, bufferId);
@@ -68,16 +77,7 @@ public class SoundManager {
 
         // Play the sound
         AL10.alSourcePlay(sourceId);
-
     }
-
-//    public static void pauseSound(int sourceId) {
-//        AL10.alSourcePause(sourceId);
-//    }
-//
-//    public static void stopSound(int sourceId) {
-//        AL10.alSourceStop(sourceId);
-//    }
 
     public static void init() {
         // Create the OpenAL context
@@ -88,7 +88,6 @@ public class SoundManager {
         AL.createCapabilities(deviceCaps);
     }
 
-    // ...
 
     public static void cleanup() {
         // Delete the OpenAL context
