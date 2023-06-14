@@ -8,3 +8,9 @@ This bad boy aced the project grade of course
 ### [Analysis Document](AnalysisDocument.docx)
 ### [Design Document](DesignDocument.docx)
 ### [Final Report](Final_report.docx)
+
+### Class Diagram
+![image](https://github.com/willkoman/SWE-Breakout/assets/14352665/f85d7a7e-8b04-4d72-98a7-0364e7f10325)
+
+### Game Preview
+![image](https://github.com/willkoman/SWE-Breakout/assets/14352665/a3322520-8816-4874-aef6-b061ae7bbcbf)
